@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini Portal de Colombia con API — Descubre la gastronomía tradicional colombiana, ingredientes típicos y recetas representativas de nuestras regiones.">
+  <title>Sabores de Colombia — Platos Típicos | Mini Portal Colombia</title>
+  <!-- Hojas de estilo del sistema modular CSS3 Mobile-First -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación Principal -->
+  <header class="encabezado">
+    <div class="contenedor encabezado-contenido">
+      <a href="index.html" class="marca-logo">
+        <span>🇨🇴 Mini Portal de Colombia</span>
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion-lista">
+          <li><a href="index.html" class="navegacion-enlace">Inicio</a></li>
+          <li><a href="departamentos.html" class="navegacion-enlace">Departamentos</a></li>
+          <li><a href="platos.html" class="navegacion-enlace activo">Sabores de Colombia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="contenedor principal">
+
+    <!-- Sección de Introducción del Módulo -->
+    <section class="seccion-encabezado" aria-labelledby="titulo-platos">
+      <h1 id="titulo-platos" class="seccion-titulo">Sabores de Colombia</h1>
+      <p class="seccion-subtitulo">
+        Descubre la gran variedad culinaria de nuestras regiones. Recetas tradicionales, ingredientes autóctonos y el sabor auténtico de la gastronomía colombiana en tiempo real.
+      </p>
+    </section>
+
+    <!-- Barra de Estadísticas y Contador Total -->
+    <div class="barra-estadisticas">
+      <span id="contador-platos" class="contador-badge" aria-live="polite">Cargando platos...</span>
+    </div>
+
+    <!-- Indicador Visual de Carga -->
+    <div id="loader" class="loader" role="status" aria-live="polite">
+      <div class="loader-spinner"></div>
+      <p>Cargando platos típicos...</p>
+    </div>
+
+    <!-- Contenedor para Mensajes de Error de Conexión -->
+    <div id="mensaje-error" class="mensaje-error oculta" role="alert">
+      <!-- Mensaje de error amigable inyectado dinámicamente -->
+    </div>
+
+    <!-- Grilla de Tarjetas de Platos Típicos -->
+    <section aria-label="Listado de platos típicos">
+      <div id="grid-platos" class="grid">
+        <!-- Tarjetas dinámicas de platos típicos inyectadas por JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="pie-pagina">
+    <div class="contenedor pie-pagina-contenido">
+      <p>Mini Portal de Colombia &copy; 2026 — Proyecto Académico desarrollado por <strong>Juan José Ardila Arévalo</strong>.</p>
+      <p>Datos consultados en tiempo real desde la plataforma abierta API Colombia.</p>
+    </div>
+  </footer>
+
+  <!-- Script del Módulo Platos Típicos -->
+  <script src="js/platos.js"></script>
+</body>
+</html>
