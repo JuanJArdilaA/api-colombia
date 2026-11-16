@@ -1,0 +1,140 @@
+/* ==========================================================================
+   css/layout.css — Arquitectura Responsiva Mobile-First y Maquetación
+   Mini Portal de Colombia con API
+   ========================================================================== */
+
+/* Contenedor centralizado */
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Área de contenido principal */
+.principal {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Encabezado global */
+.encabezado {
+  background-color: var(--color-primario);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.encabezado-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 0.75rem;
+}
+
+.marca-logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marca-logo:hover {
+  color: var(--color-secundario);
+}
+
+.navegacion-lista {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navegacion-enlace {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radio-boton);
+  transition: var(--transicion);
+  font-size: 0.95rem;
+}
+
+.navegacion-enlace:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navegacion-enlace.activo {
+  color: #1e293b;
+  background-color: var(--color-secundario);
+  font-weight: 700;
+}
+
+/* Grilla móvil por defecto (1 sola columna) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: #072740;
+  color: #cbd5e1;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 3px solid var(--color-secundario);
+}
+
+.pie-pagina p {
+  margin-bottom: 0.5rem;
+}
+
+.pie-pagina strong {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Media Queries Responsivas
+   ========================================================================== */
+
+/* Tablet y pantallas medianas (min-width: 768px) */
+@media (min-width: 768px) {
+  .contenedor {
+    padding: 0 1.5rem;
+  }
+
+  .encabezado-contenido {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.15rem 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+/* Pantallas grandes y escritorio (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .contenedor {
+    padding: 0 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

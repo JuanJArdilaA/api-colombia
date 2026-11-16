@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="plato-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo suave -->
+  <rect width="300" height="200" fill="url(#bg-grad)"/>
+
+  <!-- Sombra del plato -->
+  <ellipse cx="150" cy="130" rx="85" ry="32" fill="#cbd5e1" opacity="0.6"/>
+
+  <!-- Plato base exterior -->
+  <ellipse cx="150" cy="125" rx="82" ry="30" fill="#ffffff" stroke="#e2e8f0" stroke-width="3"/>
+
+  <!-- Plato borde interno -->
+  <ellipse cx="150" cy="125" rx="65" ry="22" fill="url(#plato-grad)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Cloche / Campana de comida -->
+  <path d="M 85 120 C 85 70, 215 70, 215 120 Z" fill="#0a3d62" opacity="0.95"/>
+
+  <!-- Borde inferior de la campana -->
+  <ellipse cx="150" cy="120" rx="65" ry="8" fill="#072740"/>
+
+  <!-- Reflejo curvo en la campana -->
+  <path d="M 105 110 C 105 85, 140 76, 170 78 C 145 80, 115 90, 115 110 Z" fill="#ffffff" opacity="0.25"/>
+
+  <!-- Asa superior de la campana en amarillo dorado -->
+  <circle cx="150" cy="66" r="10" fill="#f6b93b" stroke="#e5a928" stroke-width="2"/>
+  <rect x="146" y="74" width="8" height="6" fill="#f6b93b"/>
+
+  <!-- Destello / vapor gastronómico -->
+  <path d="M 140 45 C 137 38, 143 32, 140 25" stroke="#f6b93b" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 150 48 C 147 40, 153 34, 150 26" stroke="#f6b93b" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 160 45 C 157 38, 163 32, 160 25" stroke="#f6b93b" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- Tenedor izquierdo -->
+  <g transform="translate(45, 75) rotate(-10)">
+    <line x1="10" y1="10" x2="10" y2="60" stroke="#0a3d62" stroke-width="3" stroke-linecap="round"/>
+    <!-- Dientes del tenedor -->
+    <path d="M 5 15 C 5 28, 15 28, 15 15" stroke="#0a3d62" stroke-width="2" fill="none"/>
+    <line x1="5" y1="10" x2="5" y2="18" stroke="#0a3d62" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="10" x2="10" y2="20" stroke="#0a3d62" stroke-width="2" stroke-linecap="round"/>
+    <line x1="15" y1="10" x2="15" y2="18" stroke="#0a3d62" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cuchillo derecho -->
+  <g transform="translate(240, 75) rotate(10)">
+    <line x1="10" y1="30" x2="10" y2="60" stroke="#0a3d62" stroke-width="3" stroke-linecap="round"/>
+    <!-- Hoja del cuchillo -->
+    <path d="M 10 30 L 10 10 Q 15 10 15 20 Q 15 30 10 30 Z" fill="#0a3d62"/>
+  </g>
+
+  <!-- Texto descriptor inferior -->
+  <text x="150" y="175" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#64748b" letter-spacing="0.5">Sabor Tradicional Colombiano</text>
+</svg>

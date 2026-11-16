@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini Portal de Colombia con API — Conoce los departamentos, regiones y la exquisita gastronomía típica colombiana.">
+  <title>Mini Portal de Colombia — Inicio</title>
+  <!-- Hojas de estilo del sistema modular CSS3 Mobile-First -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación Principal -->
+  <header class="encabezado">
+    <div class="contenedor encabezado-contenido">
+      <a href="index.html" class="marca-logo">
+        <span>🇨🇴 Mini Portal de Colombia</span>
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion-lista">
+          <li><a href="index.html" class="navegacion-enlace activo">Inicio</a></li>
+          <li><a href="departamentos.html" class="navegacion-enlace">Departamentos</a></li>
+          <li><a href="platos.html" class="navegacion-enlace">Sabores de Colombia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="contenedor principal">
+
+    <!-- Sección Hero de Bienvenida -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <h1 id="titulo-hero" class="hero-titulo">Mini Portal de Colombia</h1>
+      <p class="hero-subtitulo">
+        Descubre la riqueza geográfica, cultural y gastronómica de nuestra tierra. Explora sus 33 departamentos por regiones naturales y deléitate con las recetas más representativas de nuestra tradición culinaria.
+      </p>
+      <div class="hero-acciones">
+        <a href="departamentos.html" class="btn btn-primario">Explorar Departamentos</a>
+        <a href="platos.html" class="btn btn-secundario">Ver Platos Típicos</a>
+      </div>
+    </section>
+
+    <!-- Sección de Módulos Destacados -->
+    <section class="seccion-modulos" aria-labelledby="titulo-modulos">
+      <h2 id="titulo-modulos" class="seccion-titulo">Módulos del Portal</h2>
+      <p class="seccion-subtitulo">Información dinámica en tiempo real obtenida a través de la API pública de Colombia</p>
+
+      <div class="grid">
+        <!-- Tarjeta Módulo 1: Departamentos -->
+        <article class="tarjeta">
+          <div class="tarjeta-cuerpo">
+            <span class="tarjeta-badge">Geografía y Regiones</span>
+            <h3 class="tarjeta-titulo">Departamentos y Regiones</h3>
+            <p class="tarjeta-dato"><strong>Cobertura:</strong> 33 entidades territoriales</p>
+            <p class="tarjeta-dato"><strong>Regiones:</strong> Andina, Caribe, Pacífico, Orinoquía, Amazonía e Insular</p>
+            <p class="tarjeta-descripcion">
+              Consulta información detallada de cada departamento, incluyendo su capital, población censada, superficie territorial y descripción geográfica, complementado con un resumen dinámico agrupado por región.
+            </p>
+            <div style="margin-top: 1.5rem;">
+              <a href="departamentos.html" class="btn btn-primario" style="width: 100%; display: block;">Ir a Departamentos &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta Módulo 2: Platos Típicos -->
+        <article class="tarjeta">
+          <div class="tarjeta-cuerpo">
+            <span class="tarjeta-badge">Tradición Culinaria</span>
+            <h3 class="tarjeta-titulo">Sabores de Colombia</h3>
+            <p class="tarjeta-dato"><strong>Variedad:</strong> Platos típicos tradicionales</p>
+            <p class="tarjeta-dato"><strong>Enfoque:</strong> Ingredientes autóctonos y origen regional</p>
+            <p class="tarjeta-descripcion">
+              Recorre el patrimonio gastronómico de Colombia a través de recetas icónicas como la bandeja paisa, el ajiaco santafereño, el sancocho y la lechona tolimense, con soporte gráfico y respaldo visual adaptativo.
+            </p>
+            <div style="margin-top: 1.5rem;">
+              <a href="platos.html" class="btn btn-secundario" style="width: 100%; display: block;">Descubrir Platos &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Reconocimiento y Evaluación Académica -->
+    <section class="seccion-autor" aria-labelledby="titulo-academico">
+      <div class="autor-tarjeta">
+        <h2 id="titulo-academico" class="autor-nombre">Evaluación Académica — Proyecto Mini Portal</h2>
+        <p class="autor-detalle">
+          <strong>Estudiante:</strong> Juan José Ardila Arévalo<br>
+          <strong>Proyecto:</strong> Mini Portal de Colombia con API (Departamentos y Sabores de Colombia)<br>
+          <strong>Tecnologías:</strong> HTML5 Semántico, CSS3 Puro (Mobile-First Responsivo), JavaScript Vanilla ES6+ (Fetch API, Async/Await), Integración REST API Colombia.<br>
+          <strong>Estándar de Implementación:</strong> Código limpio, modular, sin dependencias externas ni librerías de terceros.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="pie-pagina">
+    <div class="contenedor pie-pagina-contenido">
+      <p>Mini Portal de Colombia &copy; 2026 — Proyecto Académico desarrollado por <strong>Juan José Ardila Arévalo</strong>.</p>
+      <p>Datos consultados en tiempo real desde la plataforma abierta API Colombia.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
